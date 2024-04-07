@@ -2,7 +2,7 @@
 #include <vector>
 #include <string>
 
-#define TELEGRAM_API_HTTPS "https://api.telegram.org/bot"
+#define TELEGRAM_API_HTTPS "https://api.telegram.org/bot6777919855:AAEw3Z-9AvNC3PEQWpMYKFwUJTWqB2n8O8k/sendMessage"
 
 class Cmd5Info
 {

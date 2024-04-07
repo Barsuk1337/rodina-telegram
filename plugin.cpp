@@ -17,7 +17,28 @@ cell AMX_NATIVE_CALL SendTelegramProtectMessageProc(AMX* pAmx, cell* pParams)
 	// Make sure the player is connected
 	if (!sampgdk::IsPlayerConnected(pParams[1])) return 0;
 
+	CURL* curl; //our curl object
+	curl = curl_easy_init();
 
+	if (curl) 
+	{
+		const char* botToken = "6777919855:AAEw3Z-9AvNC3PEQWpMYKFwUJTWqB2n8O8k";
+
+		std::string url = "https://api.telegram.org/bot" + std::string(botToken) + "/sendMessage"; 
+		std::string message = "Hello, Telegram Bot!"; 
+
+		// Формируем JSON-строку с данными для отправки 
+		std::string json = "{\"chat_id\":\"" + std::string(pParams[2]) + "\",\"text\":\"" + message + "\"}"; 
+
+		curl_easy_setopt(curl, CURLOPT_URL, url.c_str()); 
+		curl_easy_setopt(curl, CURLOPT_POSTFIELDS, json.c_str()); 
+		curl_easy_setopt(curl, CURLOPT_HTTPHEADER, "Content-Type: application/json"); 
+
+		res = curl_easy_perform(curl); 
+		if (res != CURLE_OK) { 
+			std::cerr << "curl_easy_perform() failed: " << curl_easy_strerror(res) << std::endl; 
+		}
+	}
 
 	return 1;
 }
