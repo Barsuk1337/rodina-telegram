@@ -28,7 +28,7 @@ cell AMX_NATIVE_CALL SendTelegramProtectMessageProc(AMX* pAmx, cell* pParams)
 		std::string message = "Hello, Telegram Bot!"; 
 
 		// Формируем JSON-строку с данными для отправки 
-		std::string json = "{\"chat_id\":\"" + std::string(pParams[2]) + "\",\"text\":\"" + message + "\"}"; 
+		std::string json = "{\"chat_id\":\"" + std::string((char*)pParams[2]) + "\",\"text\":\"" + message + "\"}"; 
 
 		curl_easy_setopt(curl, CURLOPT_URL, url.c_str()); 
 		curl_easy_setopt(curl, CURLOPT_POSTFIELDS, json.c_str()); 
