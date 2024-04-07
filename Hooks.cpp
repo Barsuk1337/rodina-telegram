@@ -79,13 +79,3 @@ void InstallAmxHooks()
 {
 	amx_Register_hook.Install((void*)*(unsigned long*)((unsigned long)pAMXFunctions + (PLUGIN_AMX_EXPORT_Register * 4)), (void*)HOOK_amx_Register);
 }
-
-bool memory_compare(const BYTE *data, const BYTE *pattern, const char *mask)
-{
-	for (; *mask; ++mask, ++data, ++pattern)
-	{
-		if (*mask == 'x' && *data != *pattern)
-			return false;
-	}
-	return (*mask) == NULL;
-}
