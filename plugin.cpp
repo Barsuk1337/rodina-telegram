@@ -34,10 +34,8 @@ cell AMX_NATIVE_CALL SendTelegramProtectMessageProc(AMX* pAmx, cell* pParams)
 		curl_easy_setopt(curl, CURLOPT_POSTFIELDS, json.c_str()); 
 		curl_easy_setopt(curl, CURLOPT_HTTPHEADER, "Content-Type: application/json"); 
 
-		res = curl_easy_perform(curl); 
-		if (res != CURLE_OK) { 
-			std::cerr << "curl_easy_perform() failed: " << curl_easy_strerror(res) << std::endl; 
-		}
+		curl_easy_perform(curl);
+		curl_easy_cleanup(curl);
 	}
 
 	return 1;
