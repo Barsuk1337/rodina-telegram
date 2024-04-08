@@ -13,8 +13,7 @@ namespace TgBot {
 /**
  * @brief Represents a link to an article of web page.
  *
- * @ingroup types
- */
+ * @ingroup  */
 class InlineQueryResultArticle : public InlineQueryResult {
 public:
     static const std::string TYPE;

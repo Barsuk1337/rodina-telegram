@@ -2,7 +2,7 @@
 #define TGBOT_EVENTHANDLER_H
 
 #include "EventBroadcaster.h"
-#include "Update.h"
+#include "types/Update.h"
 #include "tools/StringTools.h"
 
 #include <algorithm>
