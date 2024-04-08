@@ -9,7 +9,7 @@ GPP = g++-4.4
 GCC = gcc
 AC_OUTFILE = "bin/telegram_protect.so"
 
-COMPILE_FLAGS = -m32 -fPIC -c -O2 -w -D LINUX -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=0 -D PROJECT_NAME=\"telegram_protect\" -D SAMPGDK_AMALGAMATION -DSAMPGDK_CPP_WRAPPERS -D SUBHOOK_STATIC -DCURL_STATICLIB
+COMPILE_FLAGS = -m32 -fPIC -c -O2 -w -D LINUX -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=0 -D PROJECT_NAME=\"telegram_protect\" -D SAMPGDK_AMALGAMATION -DSAMPGDK_CPP_WRAPPERS -D SUBHOOK_STATIC -DCURL_STATICLIB -DTGBOT_DISABLE_NAGLES_ALGORITHM -DTGBOT_CHANGE_SOCKET_BUFFER_SIZE -DTGBOT_CHANGE_READ_BUFFER_SIZE
 LIBS = -L./Shared/libs -static -static-libgcc -lc -lgcc -ldl -lboost_system -lboost_thread -lboost_filesystem -lboost_chrono -lboost_regex -lboost_date_time -lrt -lsubhook -lcurl -lssl -lcrypto
 
 LDFLAGS = -shared -lpthread
