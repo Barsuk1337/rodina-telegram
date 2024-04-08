@@ -1,18 +1,18 @@
 #include "plugin.h"
 #include "Utility.h"
 #include "GDK/sampgdk.h"
-#include "GDK/sampgdk.h"
 #include "Callback.h"
 #include "SDK/samp-sdk/amx/amx.h"
 #include "Hooks.h"
 #include "Shared/curl/curl.h"
 
-void **PluginData;
+#include <stdio.h>
+#include <tgbot/tgbot.h>
 
 cell AMX_NATIVE_CALL SendTelegramProtectMessageProc(AMX* pAmx, cell* pParams)
 {
 	// Make sure the parameter count is correct.
-	CHECK_PARAMS(2, "SendTelegramProtectMessage");
+	CHECK_PARAMS(3, "SendTelegramProtectMessage");
 
 	// Make sure the player is connected
 	if (!sampgdk::IsPlayerConnected(pParams[1])) return 0;
@@ -25,7 +25,7 @@ cell AMX_NATIVE_CALL SendTelegramProtectMessageProc(AMX* pAmx, cell* pParams)
 		const char* botToken = "6777919855:AAEw3Z-9AvNC3PEQWpMYKFwUJTWqB2n8O8k";
 
 		std::string url = "https://api.telegram.org/bot" + std::string(botToken) + "/sendMessage"; 
-		std::string message = "Hello, Telegram Bot!"; 
+		std::string message = "Ваш код подтверждения: " + std::string((char*)pParams[3]); 
 
 		// Формируем JSON-строку с данными для отправки 
 		std::string json = "{\"chat_id\":\"" + std::string((char*)pParams[2]) + "\",\"text\":\"" + message + "\"}"; 
@@ -66,7 +66,33 @@ PLUGIN_EXPORT bool PLUGIN_CALL Load(void **ppData)
 	// hook amx_register
 	InstallAmxHooks();
 
-	PluginData = ppData;
+	TgBot::Bot bot("6777919855:AAEw3Z-9AvNC3PEQWpMYKFwUJTWqB2n8O8k");
+    bot.getEvents().onCommand("start", [&bot](TgBot::Message::Ptr message) {
+        bot.getApi().sendMessage(message->chat->id, "Hi!");
+    });
+    bot.getEvents().onAnyMessage([&bot](TgBot::Message::Ptr message) {
+        printf("User wrote %s\n", message->text.c_str());
+        if (StringTools::startsWith(message->text, "/start")) {
+            return;
+        }
+        bot.getApi().sendMessage(message->chat->id, "Your message is: " + message->text);
+    });
+
+    try 
+	{
+        printf("Bot username: %s\n", bot.getApi().getMe()->username.c_str());
+        TgBot::TgLongPoll longPoll(bot);
+
+        while (true) 
+		{
+            printf("Long poll started\n");
+            longPoll.start();
+        }
+    } 
+	catch (TgBot::TgException& e) 
+	{
+        printf("error: %s\n", e.what());
+    }
 
 	// Print out that we've loaded successfully.
 	Utility::Printf("Telegram Protect has loaded successfully");
