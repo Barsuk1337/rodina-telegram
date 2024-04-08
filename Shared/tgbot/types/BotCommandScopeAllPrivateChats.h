@@ -1,7 +1,7 @@
 #ifndef TGBOT_BOTCOMMANDSCOPEALLPRIVATECHATS_H
 #define TGBOT_BOTCOMMANDSCOPEALLPRIVATECHATS_H
 
-#include "tgbot/types/BotCommandScope.h"
+#include "types/BotCommandScope.h"
 
 #include <memory>
 

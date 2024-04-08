@@ -1,7 +1,7 @@
 #ifndef TGBOT_INPUTMEDIA_H
 #define TGBOT_INPUTMEDIA_H
 
-#include "tgbot/types/MessageEntity.h"
+#include "types/MessageEntity.h"
 
 #include <memory>
 #include <string>

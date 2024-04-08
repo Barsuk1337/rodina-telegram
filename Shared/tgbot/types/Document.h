@@ -1,7 +1,7 @@
 #ifndef TGBOT_DOCUMENT_H
 #define TGBOT_DOCUMENT_H
 
-#include "tgbot/types/PhotoSize.h"
+#include "types/PhotoSize.h"
 
 #include <cstdint>
 #include <memory>

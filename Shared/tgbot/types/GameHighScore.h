@@ -1,8 +1,8 @@
 #ifndef TGBOT_GAMEHIGHSCORE_H
 #define TGBOT_GAMEHIGHSCORE_H
 
-#include "tgbot/types/PhotoSize.h"
-#include "tgbot/types/User.h"
+#include "types/PhotoSize.h"
+#include "types/User.h"
 
 #include <cstdint>
 #include <memory>

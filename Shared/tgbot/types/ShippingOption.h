@@ -1,7 +1,7 @@
 #ifndef TGBOT_SHIPPINGOPTION_H
 #define TGBOT_SHIPPINGOPTION_H
 
-#include "tgbot/types/LabeledPrice.h"
+#include "types/LabeledPrice.h"
 
 #include <string>
 #include <memory>

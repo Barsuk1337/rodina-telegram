@@ -1,7 +1,7 @@
 #ifndef TGBOT_CPP_STRINGTOOLS_H
 #define TGBOT_CPP_STRINGTOOLS_H
 
-#include "tgbot/export.h"
+#include "export.h"
 
 #include <cstddef>
 #include <vector>

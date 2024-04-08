@@ -1,8 +1,8 @@
 #ifndef TGBOT_CALLBACKQUERY_H
 #define TGBOT_CALLBACKQUERY_H
 
-#include "tgbot/types/User.h"
-#include "tgbot/types/Message.h"
+#include "types/User.h"
+#include "types/Message.h"
 
 #include <memory>
 #include <string>

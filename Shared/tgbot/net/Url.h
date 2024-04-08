@@ -1,7 +1,7 @@
 #ifndef TGBOT_CPP_URL_H
 #define TGBOT_CPP_URL_H
 
-#include "tgbot/export.h"
+#include "export.h"
 
 #include <string>
 

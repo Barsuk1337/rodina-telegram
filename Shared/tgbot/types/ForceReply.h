@@ -1,7 +1,7 @@
 #ifndef TGBOT_CPP_FORCEREPLY_H
 #define TGBOT_CPP_FORCEREPLY_H
 
-#include "tgbot/types/GenericReply.h"
+#include "types/GenericReply.h"
 
 #include <memory>
 #include <string>

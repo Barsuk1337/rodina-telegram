@@ -1,8 +1,8 @@
 #ifndef TGBOT_MENUBUTTONWEBAPP_H
 #define TGBOT_MENUBUTTONWEBAPP_H
 
-#include "tgbot/types/MenuButton.h"
-#include "tgbot/types/WebAppInfo.h"
+#include "types/MenuButton.h"
+#include "types/WebAppInfo.h"
 
 #include <memory>
 #include <string>

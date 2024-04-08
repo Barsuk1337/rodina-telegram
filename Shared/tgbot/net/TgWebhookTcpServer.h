@@ -1,7 +1,7 @@
 #ifndef TGBOT_TGWEBHOOKTCPSERVER_H
 #define TGBOT_TGWEBHOOKTCPSERVER_H
 
-#include "tgbot/net/TgWebhookServer.h"
+#include "net/TgWebhookServer.h"
 
 #include <string>
 

@@ -1,8 +1,8 @@
 #ifndef TGBOT_CHOSENINLINERESULT_H
 #define TGBOT_CHOSENINLINERESULT_H
 
-#include "tgbot/types/User.h"
-#include "tgbot/types/Location.h"
+#include "types/User.h"
+#include "types/Location.h"
 
 #include <string>
 #include <memory>

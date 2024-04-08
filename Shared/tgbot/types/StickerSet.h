@@ -1,8 +1,8 @@
 #ifndef TGBOT_STICKERSET_H
 #define TGBOT_STICKERSET_H
 
-#include "tgbot/types/Sticker.h"
-#include "tgbot/types/PhotoSize.h"
+#include "types/Sticker.h"
+#include "types/PhotoSize.h"
 
 #include <memory>
 #include <string>

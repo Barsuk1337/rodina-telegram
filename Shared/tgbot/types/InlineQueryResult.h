@@ -1,7 +1,7 @@
 #ifndef TGBOT_INLINEQUERYRESULT_H
 #define TGBOT_INLINEQUERYRESULT_H
 
-#include "tgbot/types/InlineKeyboardMarkup.h"
+#include "types/InlineKeyboardMarkup.h"
 
 #include <memory>
 #include <string>

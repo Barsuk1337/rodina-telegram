@@ -1,7 +1,7 @@
 #ifndef TGBOT_ORDERINFO_H
 #define TGBOT_ORDERINFO_H
 
-#include "tgbot/types/ShippingAddress.h"
+#include "types/ShippingAddress.h"
 
 #include <string>
 #include <memory>

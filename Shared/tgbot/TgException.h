@@ -1,7 +1,7 @@
 #ifndef TGBOT_TGEXCEPTION_H
 #define TGBOT_TGEXCEPTION_H
 
-#include "tgbot/export.h"
+#include "export.h"
 
 #include <string>
 #include <stdexcept>

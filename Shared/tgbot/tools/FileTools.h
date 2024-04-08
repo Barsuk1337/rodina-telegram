@@ -1,7 +1,7 @@
 #ifndef TGBOT_FILETOOLS_H
 #define TGBOT_FILETOOLS_H
 
-#include "tgbot/export.h"
+#include "export.h"
 
 #include <string>
 

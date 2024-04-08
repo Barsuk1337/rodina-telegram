@@ -1,8 +1,8 @@
 #ifndef TGBOT_PRECHECKOUTQUERY_H
 #define TGBOT_PRECHECKOUTQUERY_H
 
-#include "tgbot/types/User.h"
-#include "tgbot/types/OrderInfo.h"
+#include "types/User.h"
+#include "types/OrderInfo.h"
 
 #include <cstdint>
 #include <string>

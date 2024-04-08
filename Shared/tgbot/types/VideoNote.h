@@ -1,7 +1,7 @@
 #ifndef TGBOT_CPP_VIDEONOTE_H
 #define TGBOT_CPP_VIDEONOTE_H
 
-#include "tgbot/types/PhotoSize.h"
+#include "types/PhotoSize.h"
 
 #include <cstdint>
 #include <string>

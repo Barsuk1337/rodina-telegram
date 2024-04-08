@@ -1,8 +1,8 @@
 #ifndef TGBOT_CPP_BOT_H
 #define TGBOT_CPP_BOT_H
 
-#include "tgbot/Api.h"
-#include "tgbot/EventHandler.h"
+#include "Api.h"
+#include "EventHandler.h"
 
 #include <memory>
 #include <string>

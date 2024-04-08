@@ -1,9 +1,9 @@
 #ifndef TGBOT_CHATJOINREQUEST_H
 #define TGBOT_CHATJOINREQUEST_H
 
-#include "tgbot/types/Chat.h"
-#include "tgbot/types/User.h"
-#include "tgbot/types/ChatInviteLink.h"
+#include "types/Chat.h"
+#include "types/User.h"
+#include "types/ChatInviteLink.h"
 
 #include <cstdint>
 #include <memory>

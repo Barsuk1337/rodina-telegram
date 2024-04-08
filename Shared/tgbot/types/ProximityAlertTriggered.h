@@ -1,7 +1,7 @@
 #ifndef TGBOT_CPP_PROXIMITYALERTTRIGGERED_H
 #define TGBOT_CPP_PROXIMITYALERTTRIGGERED_H
 
-#include "tgbot/types/User.h"
+#include "types/User.h"
 
 #include <memory>
 

@@ -1,9 +1,9 @@
 #ifndef TGBOT_EVENTHANDLER_H
 #define TGBOT_EVENTHANDLER_H
 
-#include "tgbot/EventBroadcaster.h"
-#include "tgbot/types/Update.h"
-#include "tgbot/tools/StringTools.h"
+#include "EventBroadcaster.h"
+#include "types/Update.h"
+#include "tools/StringTools.h"
 
 #include <algorithm>
 #include <cstddef>

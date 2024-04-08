@@ -1,9 +1,9 @@
 #ifndef TGBOT_STICKER_H
 #define TGBOT_STICKER_H
 
-#include "tgbot/types/PhotoSize.h"
-#include "tgbot/types/File.h"
-#include "tgbot/types/MaskPosition.h"
+#include "types/PhotoSize.h"
+#include "types/File.h"
+#include "types/MaskPosition.h"
 
 #include <cstdint>
 #include <memory>

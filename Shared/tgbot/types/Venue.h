@@ -1,7 +1,7 @@
 #ifndef TGBOT_VENUE_H
 #define TGBOT_VENUE_H
 
-#include "tgbot/types/Location.h"
+#include "types/Location.h"
 
 #include <memory>
 #include <string>

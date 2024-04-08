@@ -1,10 +1,10 @@
 #ifndef TGBOT_CPP_CHATMEMBERUPDATED_H
 #define TGBOT_CPP_CHATMEMBERUPDATED_H
 
-#include "tgbot/types/Chat.h"
-#include "tgbot/types/User.h"
-#include "tgbot/types/ChatMember.h"
-#include "tgbot/types/ChatInviteLink.h"
+#include "types/Chat.h"
+#include "types/User.h"
+#include "types/ChatMember.h"
+#include "types/ChatInviteLink.h"
 
 #include <memory>
 

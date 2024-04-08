@@ -1,8 +1,8 @@
 #ifndef TGBOT_INPUTMEDIAVIDEO_H
 #define TGBOT_INPUTMEDIAVIDEO_H
 
-#include "tgbot/types/InputMedia.h"
-#include "tgbot/types/InputFile.h"
+#include "types/InputMedia.h"
+#include "types/InputFile.h"
 
 #include <memory>
 #include <string>

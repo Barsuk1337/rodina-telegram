@@ -3,10 +3,10 @@
 
 #ifdef HAVE_CURL
 
-#include "tgbot/net/HttpClient.h"
-#include "tgbot/net/Url.h"
-#include "tgbot/net/HttpReqArg.h"
-#include "tgbot/net/HttpParser.h"
+#include "net/HttpClient.h"
+#include "net/Url.h"
+#include "net/HttpReqArg.h"
+#include "net/HttpParser.h"
 
 #include <curl/curl.h>
 

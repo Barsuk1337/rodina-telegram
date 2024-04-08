@@ -1,9 +1,9 @@
 #ifndef TGBOT_INLINEQUERYRESULTCACHEDPHOTO_H
 #define TGBOT_INLINEQUERYRESULTCACHEDPHOTO_H
 
-#include "tgbot/types/InlineQueryResult.h"
-#include "tgbot/types/MessageEntity.h"
-#include "tgbot/types/InputMessageContent.h"
+#include "types/InlineQueryResult.h"
+#include "types/MessageEntity.h"
+#include "types/InputMessageContent.h"
 
 #include <string>
 #include <memory>

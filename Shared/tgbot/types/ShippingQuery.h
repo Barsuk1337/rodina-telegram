@@ -1,8 +1,8 @@
 #ifndef TGBOT_SHIPPINGQUERY_H
 #define TGBOT_SHIPPINGQUERY_H
 
-#include "tgbot/types/User.h"
-#include "tgbot/types/ShippingAddress.h"
+#include "types/User.h"
+#include "types/ShippingAddress.h"
 
 #include <string>
 #include <memory>

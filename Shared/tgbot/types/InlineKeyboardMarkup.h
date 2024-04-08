@@ -1,8 +1,8 @@
 #ifndef TGBOT_INLINEKEYBOARDMARKUP_H
 #define TGBOT_INLINEKEYBOARDMARKUP_H
 
-#include "tgbot/types/GenericReply.h"
-#include "tgbot/types/InlineKeyboardButton.h"
+#include "types/GenericReply.h"
+#include "types/InlineKeyboardButton.h"
 
 #include <vector>
 #include <memory>

@@ -1,10 +1,10 @@
 #ifndef TGBOT_TGHTTPSERVER_H
 #define TGBOT_TGHTTPSERVER_H
 
-#include "tgbot/Bot.h"
-#include "tgbot/EventHandler.h"
-#include "tgbot/TgTypeParser.h"
-#include "tgbot/net/HttpServer.h"
+#include "Bot.h"
+#include "EventHandler.h"
+#include "TgTypeParser.h"
+#include "net/HttpServer.h"
 
 #include <string>
 #include <unordered_map>

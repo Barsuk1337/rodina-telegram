@@ -1,7 +1,7 @@
 #ifndef TGBOT_INPUTMEDIAPHOTO_H
 #define TGBOT_INPUTMEDIAPHOTO_H
 
-#include "tgbot/types/InputMedia.h"
+#include "types/InputMedia.h"
 
 #include <memory>
 

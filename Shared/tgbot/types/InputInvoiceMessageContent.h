@@ -1,8 +1,8 @@
 #ifndef TGBOT_INPUTINVOICEMESSAGECONTENT_H
 #define TGBOT_INPUTINVOICEMESSAGECONTENT_H
 
-#include "tgbot/types/InputMessageContent.h"
-#include "tgbot/types/LabeledPrice.h"
+#include "types/InputMessageContent.h"
+#include "types/LabeledPrice.h"
 
 #include <cstdint>
 #include <memory>
