@@ -1,7 +1,7 @@
 #ifndef TGBOT_INPUTMEDIAANIMATION_H
 #define TGBOT_INPUTMEDIAANIMATION_H
 
-#include "types/InputMedia.h"
+#include "InputMedia.h"
 
 #include <memory>
 #include <string>

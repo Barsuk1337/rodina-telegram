@@ -1,9 +1,9 @@
 #ifndef TGBOT_GAME_H
 #define TGBOT_GAME_H
 
-#include "types/MessageEntity.h"
-#include "types/Animation.h"
-#include "types/PhotoSize.h"
+#include "MessageEntity.h"
+#include "Animation.h"
+#include "PhotoSize.h"
 
 #include <memory>
 #include <string>

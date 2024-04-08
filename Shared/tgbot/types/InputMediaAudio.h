@@ -1,7 +1,7 @@
 #ifndef TGBOT_INPUTMEDIAAUDIO_H
 #define TGBOT_INPUTMEDIAAUDIO_H
 
-#include "types/InputMedia.h"
+#include "InputMedia.h"
 
 #include <memory>
 #include <string>

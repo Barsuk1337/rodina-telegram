@@ -1,10 +1,10 @@
 #ifndef TGBOT_KEYBOARDBUTTON_H
 #define TGBOT_KEYBOARDBUTTON_H
 
-#include "types/KeyboardButtonRequestUser.h"
-#include "types/KeyboardButtonRequestChat.h"
-#include "types/KeyboardButtonPollType.h"
-#include "types/WebAppInfo.h"
+#include "KeyboardButtonRequestUser.h"
+#include "KeyboardButtonRequestChat.h"
+#include "KeyboardButtonPollType.h"
+#include "WebAppInfo.h"
 
 #include <memory>
 #include <string>

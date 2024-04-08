@@ -1,9 +1,9 @@
 #ifndef TGBOT_INLINEKEYBOARDBUTTON_H
 #define TGBOT_INLINEKEYBOARDBUTTON_H
 
-#include "types/WebAppInfo.h"
-#include "types/LoginUrl.h"
-#include "types/CallbackGame.h"
+#include "WebAppInfo.h"
+#include "LoginUrl.h"
+#include "CallbackGame.h"
 
 #include <memory>
 #include <string>

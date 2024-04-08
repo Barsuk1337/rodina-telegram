@@ -1,9 +1,9 @@
 #ifndef TGBOT_CHAT_H
 #define TGBOT_CHAT_H
 
-#include "types/ChatPhoto.h"
-#include "types/ChatPermissions.h"
-#include "types/ChatLocation.h"
+#include "ChatPhoto.h"
+#include "ChatPermissions.h"
+#include "ChatLocation.h"
 
 #include <cstdint>
 #include <memory>

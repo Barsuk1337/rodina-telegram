@@ -1,7 +1,7 @@
 #ifndef TGBOT_CHATMEMBEROWNER_H
 #define TGBOT_CHATMEMBEROWNER_H
 
-#include "types/ChatMember.h"
+#include "ChatMember.h"
 
 #include <memory>
 #include <string>

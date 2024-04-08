@@ -1,7 +1,7 @@
 #ifndef TGBOT_AUDIO_H
 #define TGBOT_AUDIO_H
 
-#include "types/PhotoSize.h"
+#include "PhotoSize.h"
 
 #include <cstdint>
 #include <memory>

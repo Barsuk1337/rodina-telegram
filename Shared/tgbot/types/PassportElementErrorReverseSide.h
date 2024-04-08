@@ -1,7 +1,7 @@
 #ifndef TGBOT_PASSPORTELEMENTERRORREVERSESIDE_H
 #define TGBOT_PASSPORTELEMENTERRORREVERSESIDE_H
 
-#include "types/PassportElementError.h"
+#include "PassportElementError.h"
 
 #include <string>
 #include <memory>

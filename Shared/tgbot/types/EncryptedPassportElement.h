@@ -1,7 +1,7 @@
 #ifndef TGBOT_CPP_ENCRYPTEDPASSPORTELEMENT_H
 #define TGBOT_CPP_ENCRYPTEDPASSPORTELEMENT_H
 
-#include "types/PassportFile.h"
+#include "PassportFile.h"
 
 #include <memory>
 #include <string>

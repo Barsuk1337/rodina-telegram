@@ -1,7 +1,7 @@
 #ifndef TGBOT_BOTCOMMANDSCOPECHATADMINISTRATORS_H
 #define TGBOT_BOTCOMMANDSCOPECHATADMINISTRATORS_H
 
-#include "types/BotCommandScope.h"
+#include "BotCommandScope.h"
 
 #include <cstdint>
 #include <memory>

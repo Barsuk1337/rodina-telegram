@@ -1,8 +1,8 @@
 #ifndef TGBOT_INPUTTEXTMESSAGECONTENT_H
 #define TGBOT_INPUTTEXTMESSAGECONTENT_H
 
-#include "types/InputMessageContent.h"
-#include "types/MessageEntity.h"
+#include "InputMessageContent.h"
+#include "MessageEntity.h"
 
 #include <memory>
 #include <string>

@@ -1,8 +1,8 @@
 #ifndef TGBOT_INLINEQUERYRESULTLOCATION_H
 #define TGBOT_INLINEQUERYRESULTLOCATION_H
 
-#include "types/InlineQueryResult.h"
-#include "types/InputMessageContent.h"
+#include "InlineQueryResult.h"
+#include "InputMessageContent.h"
 
 #include <cstdint>
 #include <string>

@@ -1,7 +1,7 @@
 #ifndef TGBOT_MESSAGEENTITY_H
 #define TGBOT_MESSAGEENTITY_H
 
-#include "types/User.h"
+#include "User.h"
 
 #include <cstdint>
 #include <memory>

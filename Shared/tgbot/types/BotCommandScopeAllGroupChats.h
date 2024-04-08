@@ -1,7 +1,7 @@
 #ifndef TGBOT_BOTCOMMANDSCOPEALLGROUPCHATS_H
 #define TGBOT_BOTCOMMANDSCOPEALLGROUPCHATS_H
 
-#include "types/BotCommandScope.h"
+#include "BotCommandScope.h"
 
 #include <memory>
 

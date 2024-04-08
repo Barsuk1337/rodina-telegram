@@ -1,7 +1,7 @@
 #ifndef TGBOT_CPP_REPLYKEYBOARDREMOVE_H
 #define TGBOT_CPP_REPLYKEYBOARDREMOVE_H
 
-#include "types/GenericReply.h"
+#include "GenericReply.h"
 
 #include <memory>
 

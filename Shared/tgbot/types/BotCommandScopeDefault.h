@@ -1,7 +1,7 @@
 #ifndef TGBOT_BOTCOMMANDSCOPEDEFAULT_H
 #define TGBOT_BOTCOMMANDSCOPEDEFAULT_H
 
-#include "types/BotCommandScope.h"
+#include "BotCommandScope.h"
 
 #include <memory>
 

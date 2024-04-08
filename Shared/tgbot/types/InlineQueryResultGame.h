@@ -1,7 +1,7 @@
 #ifndef TGBOT_INLINEQUERYRESULTGAME_H
 #define TGBOT_INLINEQUERYRESULTGAME_H
 
-#include "types/InlineQueryResult.h"
+#include "InlineQueryResult.h"
 
 #include <string>
 #include <memory>

@@ -1,7 +1,7 @@
 #ifndef TGBOT_PASSPORTELEMENTERRORDATAFILED_H
 #define TGBOT_PASSPORTELEMENTERRORDATAFILED_H
 
-#include "types/PassportElementError.h"
+#include "PassportElementError.h"
 
 #include <string>
 #include <memory>

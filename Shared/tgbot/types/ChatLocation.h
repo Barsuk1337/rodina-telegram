@@ -1,7 +1,7 @@
 #ifndef TGBOT_CPP_CHATLOCATION_H
 #define TGBOT_CPP_CHATLOCATION_H
 
-#include "types/Location.h"
+#include "Location.h"
 
 #include <memory>
 

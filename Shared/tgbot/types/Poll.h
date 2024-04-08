@@ -1,8 +1,8 @@
 #ifndef TGBOT_POLL_H
 #define TGBOT_POLL_H
 
-#include "types/PollOption.h"
-#include "types/MessageEntity.h"
+#include "PollOption.h"
+#include "MessageEntity.h"
 
 #include <cstdint>
 #include <memory>

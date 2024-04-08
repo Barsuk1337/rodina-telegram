@@ -1,7 +1,7 @@
 #ifndef TGBOT_SUCCESSFULPAYMENT_H
 #define TGBOT_SUCCESSFULPAYMENT_H
 
-#include "types/OrderInfo.h"
+#include "OrderInfo.h"
 
 #include <cstdint>
 #include <string>

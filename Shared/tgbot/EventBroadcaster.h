@@ -2,16 +2,16 @@
 #define TGBOT_EVENTBROADCASTER_H
 
 #include "export.h"
-#include "types/Message.h"
-#include "types/InlineQuery.h"
-#include "types/ChosenInlineResult.h"
-#include "types/CallbackQuery.h"
-#include "types/ShippingQuery.h"
-#include "types/PreCheckoutQuery.h"
-#include "types/Poll.h"
-#include "types/PollAnswer.h"
-#include "types/ChatMemberUpdated.h"
-#include "types/ChatJoinRequest.h"
+#include "Message.h"
+#include "InlineQuery.h"
+#include "ChosenInlineResult.h"
+#include "CallbackQuery.h"
+#include "ShippingQuery.h"
+#include "PreCheckoutQuery.h"
+#include "Poll.h"
+#include "PollAnswer.h"
+#include "ChatMemberUpdated.h"
+#include "ChatJoinRequest.h"
 
 #include <functional>
 #include <initializer_list>

@@ -1,9 +1,9 @@
 #ifndef TGBOT_INLINEQUERYRESULTCACHEDGIF_H
 #define TGBOT_INLINEQUERYRESULTCACHEDGIF_H
 
-#include "types/InlineQueryResult.h"
-#include "types/MessageEntity.h"
-#include "types/InputMessageContent.h"
+#include "InlineQueryResult.h"
+#include "MessageEntity.h"
+#include "InputMessageContent.h"
 
 #include <string>
 #include <memory>

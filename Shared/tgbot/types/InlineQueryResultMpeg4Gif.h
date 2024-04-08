@@ -1,9 +1,9 @@
 #ifndef TGBOT_INLINEQUERYRESULTMPEG4GIF_H
 #define TGBOT_INLINEQUERYRESULTMPEG4GIF_H
 
-#include "types/InlineQueryResult.h"
-#include "types/MessageEntity.h"
-#include "types/InputMessageContent.h"
+#include "InlineQueryResult.h"
+#include "MessageEntity.h"
+#include "InputMessageContent.h"
 
 #include <cstdint>
 #include <memory>

@@ -1,7 +1,7 @@
 #ifndef TGBOT_INPUTCONTACTMESSAGECONTENT_H
 #define TGBOT_INPUTCONTACTMESSAGECONTENT_H
 
-#include "types/InputMessageContent.h"
+#include "InputMessageContent.h"
 
 #include <memory>
 #include <string>

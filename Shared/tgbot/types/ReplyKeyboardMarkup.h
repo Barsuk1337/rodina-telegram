@@ -1,8 +1,8 @@
 #ifndef TGBOT_REPLYKEYBOARDMARKUP_H
 #define TGBOT_REPLYKEYBOARDMARKUP_H
 
-#include "types/GenericReply.h"
-#include "types/KeyboardButton.h"
+#include "GenericReply.h"
+#include "KeyboardButton.h"
 
 #include <memory>
 #include <string>

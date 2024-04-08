@@ -1,7 +1,7 @@
 #ifndef TGBOT_MENUBUTTONDEFAULT_H
 #define TGBOT_MENUBUTTONDEFAULT_H
 
-#include "types/MenuButton.h"
+#include "MenuButton.h"
 
 #include <memory>
 

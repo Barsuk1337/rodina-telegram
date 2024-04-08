@@ -1,8 +1,8 @@
 #ifndef TGBOT_CPP_PASSPORTDATA_H
 #define TGBOT_CPP_PASSPORTDATA_H
 
-#include "types/EncryptedPassportElement.h"
-#include "types/EncryptedCredentials.h"
+#include "EncryptedPassportElement.h"
+#include "EncryptedCredentials.h"
 #include <memory>
 
 namespace TgBot {

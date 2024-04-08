@@ -1,7 +1,7 @@
 #ifndef TGBOT_KEYBOARDBUTTONREQUESTCHAT_H
 #define TGBOT_KEYBOARDBUTTONREQUESTCHAT_H
 
-#include "types/ChatAdministratorRights.h"
+#include "ChatAdministratorRights.h"
 
 #include <cstdint>
 #include <memory>

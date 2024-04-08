@@ -1,8 +1,8 @@
 #ifndef TGBOT_INLINEQUERYRESULTCACHEDSTICKER_H
 #define TGBOT_INLINEQUERYRESULTCACHEDSTICKER_H
 
-#include "types/InlineQueryResult.h"
-#include "types/InputMessageContent.h"
+#include "InlineQueryResult.h"
+#include "InputMessageContent.h"
 
 #include <string>
 #include <memory>

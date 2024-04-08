@@ -1,7 +1,7 @@
 #ifndef TGBOT_CPP_POLLANSWER_H
 #define TGBOT_CPP_POLLANSWER_H
 
-#include "types/User.h"
+#include "User.h"
 
 #include <string>
 #include <memory>

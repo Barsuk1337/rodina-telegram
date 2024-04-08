@@ -1,8 +1,8 @@
 #ifndef TGBOT_INLINEQUERY_H
 #define TGBOT_INLINEQUERY_H
 
-#include "types/User.h"
-#include "types/Location.h"
+#include "User.h"
+#include "Location.h"
 
 #include <memory>
 #include <string>

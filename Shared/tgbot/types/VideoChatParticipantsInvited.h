@@ -1,7 +1,7 @@
 #ifndef TGBOT_VIDEOCHATPARTICIPANTSINVITED_H
 #define TGBOT_VIDEOCHATPARTICIPANTSINVITED_H
 
-#include "types/User.h"
+#include "User.h"
 
 #include <memory>
 #include <vector>

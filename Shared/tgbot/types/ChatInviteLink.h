@@ -1,7 +1,7 @@
 #ifndef TGBOT_CPP_CHATINVITELINK_H
 #define TGBOT_CPP_CHATINVITELINK_H
 
-#include "types/User.h"
+#include "User.h"
 
 #include <cstdint>
 #include <memory>
