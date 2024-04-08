@@ -3,10 +3,10 @@
 
 #ifdef HAVE_CURL
 
-#include "net/HttpClient.h"
-#include "net/Url.h"
-#include "net/HttpReqArg.h"
-#include "net/HttpParser.h"
+#include "HttpClient.h"
+#include "Url.h"
+#include "HttpReqArg.h"
+#include "HttpParser.h"
 
 #include <curl/curl.h>
 

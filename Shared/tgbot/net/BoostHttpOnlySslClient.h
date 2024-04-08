@@ -1,10 +1,10 @@
 #ifndef TGBOT_BOOSTHTTPCLIENT_H
 #define TGBOT_BOOSTHTTPCLIENT_H
 
-#include "net/HttpClient.h"
-#include "net/Url.h"
-#include "net/HttpReqArg.h"
-#include "net/HttpParser.h"
+#include "HttpClient.h"
+#include "Url.h"
+#include "HttpReqArg.h"
+#include "HttpParser.h"
 
 #include <boost/asio.hpp>
 

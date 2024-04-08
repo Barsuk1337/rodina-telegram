@@ -1,8 +1,8 @@
 #ifndef TGBOT_HTTPCLIENT_H
 #define TGBOT_HTTPCLIENT_H
 
-#include "net/Url.h"
-#include "net/HttpReqArg.h"
+#include "Url.h"
+#include "HttpReqArg.h"
 
 #include <string>
 #include <vector>

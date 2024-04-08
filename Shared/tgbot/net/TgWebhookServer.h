@@ -3,8 +3,8 @@
 
 #include "Bot.h"
 #include "EventHandler.h"
-#include "TgTypeParser.h"
-#include "net/HttpServer.h"
+#include "../TgTypeParser.h"
+#include "HttpServer.h"
 
 #include <string>
 #include <unordered_map>

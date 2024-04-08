@@ -1,7 +1,7 @@
 #ifndef TGBOT_HTTPSERVER_H
 #define TGBOT_HTTPSERVER_H
 
-#include "net/HttpParser.h"
+#include "HttpParser.h"
 
 #include <boost/asio.hpp>
 

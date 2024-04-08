@@ -1,8 +1,8 @@
 #ifndef TGBOT_HTTPPARSER_H
 #define TGBOT_HTTPPARSER_H
 
-#include "net/Url.h"
-#include "net/HttpReqArg.h"
+#include "Url.h"
+#include "HttpReqArg.h"
 
 #include <string>
 #include <unordered_map>
