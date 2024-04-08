@@ -1,7 +1,7 @@
 #ifndef TGBOT_CPP_INPUTFILE_H
 #define TGBOT_CPP_INPUTFILE_H
 
-#include "export.h"
+#include "../export.h"
 
 #include <memory>
 #include <string>

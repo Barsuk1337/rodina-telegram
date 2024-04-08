@@ -1,7 +1,7 @@
 #ifndef TGBOT_HTTPPARAMETER_H
 #define TGBOT_HTTPPARAMETER_H
 
-#include "export.h"
+#include "../export.h"
 
 #include <boost/lexical_cast.hpp>
 
