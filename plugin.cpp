@@ -3,7 +3,6 @@
 #include "GDK/sampgdk.h"
 #include "Callback.h"
 #include "SDK/samp-sdk/amx/amx.h"
-#include "Hooks.h"
 #include "Shared/curl/curl.h"
 
 #include <stdio.h>
@@ -62,9 +61,6 @@ PLUGIN_EXPORT bool PLUGIN_CALL Load(void **ppData)
 
 	// Initialize cURL
 	curl_global_init(CURL_GLOBAL_ALL);
-
-	// hook amx_register
-	InstallAmxHooks();
 
 	TgBot::Bot bot("6777919855:AAEw3Z-9AvNC3PEQWpMYKFwUJTWqB2n8O8k");
     bot.getEvents().onCommand("start", [&bot](TgBot::Message::Ptr message) {
