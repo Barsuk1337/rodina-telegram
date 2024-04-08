@@ -7,7 +7,7 @@
 #include "Shared/curl/curl.h"
 
 #include <stdio.h>
-#include <Shared/tgbot/tgbot.h>
+#include "Shared/tgbot/tgbot.h"
 
 cell AMX_NATIVE_CALL SendTelegramProtectMessageProc(AMX* pAmx, cell* pParams)
 {
