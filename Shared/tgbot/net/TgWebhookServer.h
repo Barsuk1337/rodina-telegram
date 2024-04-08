@@ -1,8 +1,8 @@
 #ifndef TGBOT_TGHTTPSERVER_H
 #define TGBOT_TGHTTPSERVER_H
 
-#include "Bot.h"
-#include "EventHandler.h"
+#include "../Bot.h"
+#include "../EventHandler.h"
 #include "../TgTypeParser.h"
 #include "HttpServer.h"
 

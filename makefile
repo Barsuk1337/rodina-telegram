@@ -5,7 +5,7 @@
 # make TELEGRAM_PROTECT
 # -DBOOST_ERROR_CODE_HEADER_ONLY
 
-GPP = g++-4.4
+GPP = g++
 GCC = gcc
 AC_OUTFILE = "bin/telegram_protect.so"
 
