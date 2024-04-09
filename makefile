@@ -33,6 +33,5 @@ TELEGRAM_PROTECT: clean
 	$(GPP) $(TELEGRAM_PROTECT) ./SDK/samp-sdk/*.cpp
 	$(GCC) $(TELEGRAM_PROTECT) ./GDK/*.c
 	$(GPP) $(TELEGRAM_PROTECT) *.cpp
-	$(GPP) $(TELEGRAM_PROTECT) ./Shared/MD5_Info/*.cpp
 	mkdir -p "bin"
 	$(GPP) -m32 -O2 -fshort-wchar -static -I ./Shared/ -static-libstdc++ -o $(OUTFILE_PATH) *.o $(LDFLAGS) $(LIBS)
