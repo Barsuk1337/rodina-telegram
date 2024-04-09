@@ -63,14 +63,20 @@ PLUGIN_EXPORT bool PLUGIN_CALL Load(void **ppData)
 	curl_global_init(CURL_GLOBAL_ALL);
 
 	TgBot::Bot bot("6777919855:AAEw3Z-9AvNC3PEQWpMYKFwUJTWqB2n8O8k");
+
     bot.getEvents().onCommand("start", [&bot](TgBot::Message::Ptr message) {
-        bot.getApi().sendMessage(message->chat->id, "Hi!");
+
+        bot.getApi().sendMessage(message->chat->id, "Привет! Я официальный помощник Rodina Role Play. Чтобы я помог тебе защитить аккаунт, введи /reg");
     });
+
+	bot.getEvents().onCommand("reg", [&bot](TgBot::Message::Ptr message) {
+
+        bot.getApi().sendMessage(message->chat->id, "Ваш код подтверждения: " + std::string((char*)message->chat->id));
+    });
+
     bot.getEvents().onAnyMessage([&bot](TgBot::Message::Ptr message) {
+
         printf("User wrote %s\n", message->text.c_str());
-        if (StringTools::startsWith(message->text, "/start")) {
-            return;
-        }
         bot.getApi().sendMessage(message->chat->id, "Your message is: " + message->text);
     });
 
