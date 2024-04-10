@@ -13,7 +13,7 @@ InputFile::Ptr InputFile::fromFile(const string& filePath, const string& mimeTyp
     auto result(make_shared<InputFile>());
     result->data = FileTools::read(filePath);
     result->mimeType = mimeType;
-    //result->fileName = std::filesystem::path(filePath).filename().string();
+    result->fileName = std::filesystem::path(filePath).filename().string();
     return result;
 }
 

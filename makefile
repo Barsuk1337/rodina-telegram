@@ -1,10 +1,3 @@
-# This file demonstrates how to compile the SAMPAC project on Linux.
-#
-# To compile SAMPAC do:
-#
-# make SAMPAC
-# -DBOOST_ERROR_CODE_HEADER_ONLY
-
 GPP = g++
 GCC = gcc
 OUTFILE_PATH = "bin/telegram_protect.so"
@@ -25,10 +18,10 @@ TELEGRAM_PROTECT: clean
 	$(GPP) $(TELEGRAM_PROTECT) ./SDK/samp-sdk/*.cpp
 	$(GCC) $(TELEGRAM_PROTECT) ./GDK/*.c
 	$(GPP) $(TELEGRAM_PROTECT) *.cpp
-	$(GPP) $(TELEGRAM_PROTECT) ./Shared/src/*.cpp
-	$(GPP) $(TELEGRAM_PROTECT) ./Shared/src/net/*.cpp
-	$(GPP) $(TELEGRAM_PROTECT) ./Shared/src/tools/*.cpp
-	$(GPP) $(TELEGRAM_PROTECT) ./Shared/src/types/*.cpp
+	$(GPP) $(TELEGRAM_PROTECT) -std=c++17 ./Shared/src/*.cpp
+	$(GPP) $(TELEGRAM_PROTECT) -std=c++17 ./Shared/src/net/*.cpp
+	$(GPP) $(TELEGRAM_PROTECT) -std=c++17 ./Shared/src/tools/*.cpp
+	$(GPP) $(TELEGRAM_PROTECT) -std=c++17 ./Shared/src/types/*.cpp
 	mkdir -p "bin"
 	$(GPP) -m32 -O2 -fshort-wchar -static -I ./Shared/ -o $(OUTFILE_PATH) *.o $(LDFLAGS) $(LIBS)
 	rm *.o
