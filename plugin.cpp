@@ -17,7 +17,7 @@ cell AMX_NATIVE_CALL SendTelegramProtectMessageProc(AMX* pAmx, cell* pParams)
 	// Make sure the player is connected
 	if (!sampgdk::IsPlayerConnected(pParams[1])) return 0;
 
-	CURL* curl; //our curl object
+	/*CURL* curl; //our curl object
 	curl = curl_easy_init();
 
 	if (curl) 
@@ -36,7 +36,7 @@ cell AMX_NATIVE_CALL SendTelegramProtectMessageProc(AMX* pAmx, cell* pParams)
 
 		curl_easy_perform(curl);
 		curl_easy_cleanup(curl);
-	}
+	}*/
 
 	return 1;
 }
@@ -85,13 +85,14 @@ PLUGIN_EXPORT bool PLUGIN_CALL Load(void **ppData)
 	{
         printf("Bot username: %s\n", bot.getApi().getMe()->username.c_str());
         TgBot::TgLongPoll longPoll(bot);
-		longPoll.start();
 
-        /*while (true) 
+        while (true) 
 		{
             printf("Long poll started\n");
             longPoll.start();
-        }*/
+
+			usleep(1000);
+        }
     } 
 	catch (TgBot::TgException& e) 
 	{
