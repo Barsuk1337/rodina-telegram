@@ -67,40 +67,37 @@ PLUGIN_EXPORT bool PLUGIN_CALL Load(void **ppData)
 
     bot.getEvents().onCommand("start", [&bot](TgBot::Message::Ptr message) {
 
-        bot.getApi().sendMessage(message->chat->id, "Привет! Я официальный помощник Rodina Role Play. Чтобы я помог тебе защитить аккаунт, введи /reg");
+        bot.getApi().sendMessage(message->chat->id, "Hi");
     });
 
 	bot.getEvents().onCommand("reg", [&bot](TgBot::Message::Ptr message) {
 
-        bot.getApi().sendMessage(message->chat->id, "Ваш код подтверждения: " + std::string((char*)message->chat->id));
+        bot.getApi().sendMessage(message->chat->id, "Your code: " + std::string((char*)message->chat->id));
     });
 
     bot.getEvents().onAnyMessage([&bot](TgBot::Message::Ptr message) {
 
         printf("User wrote %s\n", message->text.c_str());
-        bot.getApi().sendMessage(message->chat->id, "Your message is: " + message->text);
+        bot.getApi().sendMessage(message->chat->id, "Bot message: " + message->text);
     });
 
     try 
 	{
-        printf("Bot username: %s\n", bot.getApi().getMe()->username.c_str());
+        Utility::Printf("Telegram Protect has loaded, bot name: %s", bot.getApi().getMe()->username.c_str());
+
         TgBot::TgLongPoll longPoll(bot);
 
         while (true) 
 		{
-            printf("Long poll started\n");
             longPoll.start();
 
-			usleep(1000);
+			usleep(2000);
         }
     } 
 	catch (TgBot::TgException& e) 
 	{
-        printf("error: %s\n", e.what());
+        Utility::Printf("error: %s | %s", e.what(), e);
     }
-
-	// Print out that we've loaded successfully.
-	Utility::Printf("Telegram Protect has loaded successfully");
 
 	// return SampGDK load value
 	return load;
