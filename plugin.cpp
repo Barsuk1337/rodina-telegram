@@ -85,12 +85,13 @@ PLUGIN_EXPORT bool PLUGIN_CALL Load(void **ppData)
 	{
         printf("Bot username: %s\n", bot.getApi().getMe()->username.c_str());
         TgBot::TgLongPoll longPoll(bot);
+		longPoll.start();
 
-        while (true) 
+        /*while (true) 
 		{
             printf("Long poll started\n");
             longPoll.start();
-        }
+        }*/
     } 
 	catch (TgBot::TgException& e) 
 	{

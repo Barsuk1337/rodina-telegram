@@ -21,14 +21,6 @@ all: TELEGRAM_PROTECT
 clean:
 	-rm -f *~ *.o *.so
 
-quick:
-	$(GPP) -m32 -O2 -fshort-wchar -static -o $(OUTFILE_PATH) *.o $(LDFLAGS) $(LIBS)
-
-quickcomp:
-
-	$(GPP) $(TELEGRAM_PROTECT) *.cpp
-	quick
-
 TELEGRAM_PROTECT: clean
 	$(GPP) $(TELEGRAM_PROTECT) ./SDK/samp-sdk/*.cpp
 	$(GCC) $(TELEGRAM_PROTECT) ./GDK/*.c
@@ -39,3 +31,4 @@ TELEGRAM_PROTECT: clean
 	$(GPP) $(TELEGRAM_PROTECT) ./Shared/src/types/*.cpp
 	mkdir -p "bin"
 	$(GPP) -m32 -O2 -fshort-wchar -static -I ./Shared/ -o $(OUTFILE_PATH) *.o $(LDFLAGS) $(LIBS)
+	rm *.o
