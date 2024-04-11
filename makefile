@@ -2,8 +2,8 @@ GPP = g++
 GCC = gcc
 OUTFILE_PATH = "bin/telegram_protect.so"
 
-COMPILE_FLAGS = -m32 -fPIC -c -O2 -w -D LINUX -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=0 -D PROJECT_NAME=\"telegram_protect\" -D SAMPGDK_AMALGAMATION -DSAMPGDK_CPP_WRAPPERS -D SUBHOOK_STATIC -DCURL_STATICLIB
-LIBS = -L./Shared/libs -static -static-libgcc -lc -lgcc -ldl -lboost_system -lrt -lcurl -lssl -lcrypto
+COMPILE_FLAGS = -m32 -fPIC -c -O2 -w -D LINUX -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=0 -D PROJECT_NAME=\"telegram_protect\" -D SAMPGDK_AMALGAMATION -DSAMPGDK_CPP_WRAPPERS
+LIBS = -L./include/libs -static -static-libgcc -lgcc -lssl -lcrypto
 
 LDFLAGS = -shared -lpthread
 
@@ -15,13 +15,14 @@ clean:
 	-rm -f *~ *.o *.so
 
 TELEGRAM_PROTECT: clean
-	$(GPP) $(TELEGRAM_PROTECT) ./SDK/samp-sdk/*.cpp
-	$(GCC) $(TELEGRAM_PROTECT) ./GDK/*.c
-	$(GPP) $(TELEGRAM_PROTECT) *.cpp
-	$(GPP) $(TELEGRAM_PROTECT) -std=c++17 ./Shared/src/*.cpp
-	$(GPP) $(TELEGRAM_PROTECT) -std=c++17 ./Shared/src/net/*.cpp
-	$(GPP) $(TELEGRAM_PROTECT) -std=c++17 ./Shared/src/tools/*.cpp
-	$(GPP) $(TELEGRAM_PROTECT) -std=c++17 ./Shared/src/types/*.cpp
+	$(GPP) $(TELEGRAM_PROTECT) ./include/SDK/samp-sdk/*.cpp
+	$(GCC) $(TELEGRAM_PROTECT) ./include/GDK/*.c
+	$(GPP) $(TELEGRAM_PROTECT) -std=c++17 ./include/tgbot/*.cpp
+	$(GPP) $(TELEGRAM_PROTECT) -std=c++17 ./include/tgbot/net/*.cpp
+	$(GPP) $(TELEGRAM_PROTECT) -std=c++17 ./include/tgbot/tools/*.cpp
+	$(GPP) $(TELEGRAM_PROTECT) -std=c++17 ./include/tgbot/types/*.cpp
+	$(GPP) $(TELEGRAM_PROTECT) -I ./include/ ./include/*.cpp
+	$(GPP) $(TELEGRAM_PROTECT) -I ./include/ ./src/*.cpp
 	mkdir -p "bin"
-	$(GPP) -m32 -O2 -fshort-wchar -static -I ./Shared/ -o $(OUTFILE_PATH) *.o $(LDFLAGS) $(LIBS)
+	$(GPP) -m32 -O2 -fshort-wchar -static -o $(OUTFILE_PATH) *.o $(LDFLAGS) $(LIBS)
 	rm *.o
